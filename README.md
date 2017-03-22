@@ -1,4 +1,7 @@
 #**Finding Lane Lines on the Road** 
+
+---
+
 <img src="/examples/lanelines_all.jpg" width="480" alt="Combined Image" />
 
 
