@@ -11,7 +11,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/lanelines_all.jpg "LaneLines"
 
-![alt text][Lanelines]
+![alt text][image1]
 
 
 
@@ -46,8 +46,8 @@ then found a better vectorised solution as previously mentioned by https://githu
 Potential shortcomings of my approach:
 
 
-Slope conditions used for detecting right and left lanes do not work in case of a curve in the road
-Region of Interest is hard coded.
+* Slope conditions used for detecting right and left lanes do not work in case of a curve in the road
+* Region of Interest is hard coded.
 
 
 
@@ -55,5 +55,5 @@ Region of Interest is hard coded.
 
 Possible improvements to my approach:
 
-Make Region of Interest dynamic
-Modify the slope conditions, so that they work with curve in the road
+* Make Region of Interest dynamic
+* Modify the slope conditions, so that they work with curve in the road
