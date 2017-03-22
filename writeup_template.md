@@ -23,25 +23,37 @@ The goals / steps of this project are the following:
 
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 5 steps:
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+Convert the images to grayscale
+Perform Gausian smoothing and apply Canny edge detection
+Select region of interest and mask other areas of the image
+Apply Hough Transform to detect lane lines
+Superimpose the lane lines on the original image
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by:
+
+Calculated slope and center of each line. Then based on the slope, sort it into right or left lane line
+Calculate the average slope and the center of right and left lane
+Then using the Y coordinates, based on Region of Interest, figure out the X cordinates using the avg slope and center point of lane lines [equation used: (y-y') = M (x-x')]
+
+
 
 ![alt text][image1]
 
 
 ###2. Identify potential shortcomings with your current pipeline
 
+Potential shortcomings of my approach:
 
-One potential shortcoming would be what would happen when ... 
+Slope conditions used for detecting right and left lanes do not work in case of a curve in the road
 
-Another shortcoming could be ...
+
 
 
 ###3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+Possible improvements to my approach:
 
-Another potential improvement could be to ...
+Make the image mask selection dynamic, so that it could work in different scenarios
+Modify the slope conditions, so that they work with curve in the road
