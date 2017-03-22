@@ -2,8 +2,9 @@
 
 ---
 
-<img src="/examples/lanelines_all.jpg" width="480" alt="Combined Image" />
+[image1]: ./examples/lanelines_all.jpg "LaneLines"
 
+![alt text][image1]
 
 
 
